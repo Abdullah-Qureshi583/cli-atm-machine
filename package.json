@@ -1,10 +1,10 @@
 {
-  "name": "cli-atm-machine",
+  "name": "aq-cli-atm-machine",
   "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": "o=index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
