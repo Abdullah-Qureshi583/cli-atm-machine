@@ -2,14 +2,15 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 // storing pincode and userBalance in a variable
-const pinCode = 1;
+const pinCode = 7777;
 let userBalance = 10000;
 // Printing greeting message.
 console.log(chalk.rgb(216, 225, 253)("Welcome to Personal ATM machine"));
 // This function tells that if user withdraw more than his balance, it shows "Insufficient balance"
 function insufficientBalance(amount) {
     if (amount > userBalance) {
-        console.log(chalk.rgb(214, 40, 40)(`Insufficient amount! Your reamaining balance is : ${userBalance} but you try to withdraw ${amount}`));
+        console.log(chalk.rgb(214, 40, 40)(`Insufficient amount! Your reamaining balance is : 
+        ${userBalance} but you try to withdraw ${amount}`));
     }
     else {
         userBalance -= amount;
@@ -59,3 +60,5 @@ if (pinAnswer.userPin === pinCode) {
 else {
     console.log(chalk.rgb(214, 40, 40)("Incorrect pin code"));
 }
+// Printing goodbye message
+console.log(chalk.rgb(216, 225, 253)("Thanks to use our ATM Machine"));
